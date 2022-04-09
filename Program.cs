@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LatihanOverloadingMethod
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Numbers number = new Numbers();
+
+            Console.WriteLine("Minimum #1: {0}", number.FindMinimum(2, 4));
+            Console.WriteLine("Minimum #2: {0}", number.FindMinimum(6, 3, 2));
+            Console.WriteLine();
+            Console.WriteLine("Maximum #1: {0}", number.FindMinimum(8, 4));
+            Console.WriteLine("Maximum #2: {0}", number.FindMinimum(8, 4, 2));
+
+            Console.WriteLine(); 
+
+            Console.WriteLine("Press any button to continue");
+            Console.ReadKey();
+
+
+
+        }
+    }
+}
